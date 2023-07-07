@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
+  // eliminateQuestions
   const eliminateQuestions = [
     {
       question: "What does HTML stand for?",
@@ -249,13 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
       correctOption: 2,
       action: "eliminate",
     },
-    {
-      question:
-        "What HTML attribute is used to specify an alternative text for an image, if the image cannot be displayed?",
-      options: ["alt", "src", "longdesc", "href"],
-      correctOption: 1,
-      action: "eliminate",
-    },
+
     {
       question: "How do you create a JavaScript array?",
       options: [
@@ -325,8 +320,195 @@ document.addEventListener("DOMContentLoaded", () => {
       correctOption: 3,
       action: "eliminate",
     },
+    {
+      question: "Which is NOT a programming language?",
+      options: ["Python", "Java", "HTML", "C++"],
+      correctOption: 2,
+      action: "eliminate",
+    },
+    {
+      question:
+        "Which HTML attribute is used to specify the destination of a link?",
+      options: ["href", "src", "destination", "link"],
+      correctOption: 1,
+      action: "eliminate",
+    },
+    {
+      question: "What does the 'alt' attribute in an <img> element represent?",
+      options: [
+        "alternate text",
+        "altitude of image",
+        "alignment",
+        "alternative source",
+      ],
+      correctOption: 1,
+      action: "eliminate",
+    },
+
+    {
+      question: "How do you select all <p> elements in CSS?",
+      options: ["p{}", ".p{}", "#p{}", "$p{}"],
+      correctOption: 1,
+      action: "eliminate",
+    },
+    {
+      question: "Which property is used to change the font of an element?",
+      options: ["font-style", "font-weight", "text-style", "font-family"],
+      correctOption: 4,
+      action: "eliminate",
+    },
+    {
+      question:
+        "Which property is used to change the text color of an element?",
+      options: ["color", "font-color", "text-color", "font"],
+      correctOption: 1,
+      action: "eliminate",
+    },
+    {
+      question:
+        "How do you make each word in a text start with a capital letter?",
+      options: [
+        "text-transform:capitalize",
+        "You can't do that with CSS",
+        "text-style:capitalized",
+        "text:capitalized",
+      ],
+      correctOption: 1,
+      action: "eliminate",
+    },
+    {
+      question: "How do you make the text bold in CSS?",
+      options: [
+        "font: bold;",
+        "font-weight: bold;",
+        "font-bold: yes;",
+        "text: bold;",
+      ],
+      correctOption: 2,
+      action: "eliminate",
+    },
+    {
+      question: "Which JavaScript method is used to get an element by its ID?",
+      options: ["get()", "getElementById()", "getById()", "getElement()"],
+      correctOption: 2,
+      action: "eliminate",
+    },
+    {
+      question: "Which of the following is not a JavaScript data type?",
+      options: ["String", "Number", "Image", "Boolean"],
+      correctOption: 3,
+      action: "eliminate",
+    },
+
+    {
+      question: "Which HTML tag is used to define a JavaScript block?",
+      options: ["<script>", "<javascript>", "<js>", "<code>"],
+      correctOption: 1,
+      action: "eliminate",
+    },
+
+    {
+      question: "Which HTML element is used to display a data cell in a table?",
+      options: ["<td>", "<cell>", "<dc>", "<data>"],
+      correctOption: 1,
+      action: "eliminate",
+    },
+    {
+      question: "Which tag allows you to add a row in HTML?",
+      options: ["<row>", "<tr>", "<td>", "<add>"],
+      correctOption: 2,
+      action: "eliminate",
+    },
+    {
+      question: "Which tag is used to add an item in the list?",
+      options: ["<li>", "<ul>", "<ol>", "<item>"],
+      correctOption: 1,
+      action: "eliminate",
+    },
+
+    {
+      question: "How do you define a constant in JavaScript?",
+      options: ["constant x = 1;", "const x = 1;", "x := 1;", "define x = 1;"],
+      correctOption: 2,
+      action: "eliminate",
+    },
+
+    {
+      question: "How to write an inline style to set the font size to 20px?",
+      options: [
+        "style='font-size:20px'",
+        "style:font-size=20px",
+        "font-size:style=20px",
+        "style='set-font:20px'",
+      ],
+      correctOption: 1,
+      action: "eliminate",
+    },
+    {
+      question:
+        "What is the default display value for the 'div' element in CSS?",
+      options: ["block", "inline", "inline-block", "none"],
+      correctOption: 1,
+      action: "eliminate",
+    },
+    {
+      question:
+        "In HTML, which attribute is used to specify the type of input element?",
+      options: ["type", "inputType", "elementType", "kind"],
+      correctOption: 1,
+      action: "eliminate",
+    },
+
+    {
+      question: "What does the 'DOMContentLoaded' event signify in JavaScript?",
+      options: [
+        "The user has clicked on the document",
+        "The document and all sub-resources have finished loading",
+        "The HTML document has been fully parsed",
+        "The browser has lost connection",
+      ],
+      correctOption: 3,
+      action: "eliminate",
+    },
+    {
+      question:
+        "Which of these CSS units is not relative to the size of the parent element?",
+      options: ["em", "px", "rem", "%"],
+      correctOption: 2,
+      action: "eliminate",
+    },
+    {
+      question:
+        "How do you access the first element of an array named 'fruits' in JavaScript?",
+      options: ["fruits[1]", "fruits[0]", "fruits.first", "fruits(1)"],
+      correctOption: 2,
+      action: "eliminate",
+    },
+    {
+      question: "In HTML, what does the 'required' attribute do?",
+      options: [
+        "Prevents a form from being submitted if the input field is empty",
+        "Makes sure that an input field is unique",
+        "Checks if the input is a valid email",
+        "Makes the input field hidden",
+      ],
+      correctOption: 1,
+      action: "eliminate",
+    },
+    {
+      question: "What does the 'this' keyword refer to in JavaScript?",
+      options: [
+        "The current function",
+        "The object that the function is a method of",
+        "The current element",
+        "The global object",
+      ],
+      correctOption: 2,
+      action: "eliminate",
+    },
   ];
 
+// shieldQuestions
   const shieldQuestions = [
     {
       question: "What should you do if someone is choking?",
@@ -405,13 +587,7 @@ document.addEventListener("DOMContentLoaded", () => {
       correctOption: 3,
       action: "shield",
     },
-    {
-      question:
-        "What is the emergency text message number for people who are deaf or hard of hearing in the UK?",
-      options: ["999", "112", "18000", "111"],
-      correctOption: 3,
-      action: "shield",
-    },
+
     {
       question: "What does A&E stand for in the context of the NHS?",
       options: [
@@ -448,7 +624,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       question:
-        "In which year was the NHS founded? It just celebrated its birth day on 1st week of July.",
+        "In which year was the NHS founded? 5th of July is its Birthday",
       options: ["1948", "1952", "1938", "1960"],
       correctOption: 1,
       action: "shield",
@@ -494,12 +670,7 @@ document.addEventListener("DOMContentLoaded", () => {
       correctOption: 2,
       action: "shield",
     },
-    {
-      question: "What is the powerhouse of the cell?",
-      options: ["Nucleus", "Ribosome", "Mitochondria", "Endoplasmic Reticulum"],
-      correctOption: 3,
-      action: "shield",
-    },
+
     {
       question: "Which blood type is known as the universal donor?",
       options: ["A", "B", "AB", "O"],
@@ -521,12 +692,6 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       question: "How many chambers does the human heart have?",
       options: ["2", "4", "6", "8"],
-      correctOption: 2,
-      action: "shield",
-    },
-    {
-      question: "What is the largest bone in the human body?",
-      options: ["Humerus", "Femur", "Tibia", "Pelvis"],
       correctOption: 2,
       action: "shield",
     },
@@ -600,12 +765,6 @@ document.addEventListener("DOMContentLoaded", () => {
       action: "shield",
     },
     {
-      question: "What is the smallest bone in the human body?",
-      options: ["Stapes", "Pisiform", "Fibula", "Scaphoid"],
-      correctOption: 1,
-      action: "shield",
-    },
-    {
       question: "What is the most common human blood type allele?",
       options: ["A", "B", "O", "AB"],
       correctOption: 3,
@@ -636,12 +795,184 @@ document.addEventListener("DOMContentLoaded", () => {
       action: "shield",
     },
     {
-      question: "What is the main symptom of myopia?",
+      question:
+        "Which vaccination is given to newborn babies to protect them from tuberculosis?",
+      options: ["MMR", "BCG", "HPV", "DTP"],
+      correctOption: 2,
+      action: "shield",
+    },
+    {
+      question: "What does GP stand for in the UK healthcare system?",
       options: [
-        "Blurred Distant Vision",
-        "Blurred Close Vision",
-        "Cloudy Vision",
-        "Double Vision",
+        "General Practitioner",
+        "Governmental Practitioner",
+        "Generalized Patient",
+        "Grouped Practice",
+      ],
+      correctOption: 1,
+      action: "shield",
+    },
+    {
+      question:
+        "What is the recommended minimum minutes of exercise per week for adults?",
+      options: ["90 minutes", "150 minutes", "200 minutes", "250 minutes"],
+      correctOption: 2,
+      action: "shield",
+    },
+    {
+      question:
+        "What is the UK’s recommended maximum daily intake of salt for an adult?",
+      options: ["3g", "6g", "9g", "12g"],
+      correctOption: 2,
+      action: "shield",
+    },
+    {
+      question: "What is the main symptom of asthma?",
+      options: ["Shortness of breath", "Nausea", "Headaches", "Joint pain"],
+      correctOption: 1,
+      action: "shield",
+    },
+    {
+      question: "Which of these is NOT a symptom of diabetes?",
+      options: [
+        "Increased thirst",
+        "Frequent urination",
+        "Blurred vision",
+        "Increased hair growth",
+      ],
+      correctOption: 4,
+      action: "shield",
+    },
+    {
+      question:
+        "What is the recommended way to check for the early signs of breast cancer?",
+      options: ["Blood test", "Breast self-exam", "Bone scan", "Urine test"],
+      correctOption: 2,
+      action: "shield",
+    },
+    {
+      question:
+        "What type of medication is usually prescribed to people suffering from high cholesterol?",
+      options: ["Statins", "Antibiotics", "Antihistamines", "Beta blockers"],
+      correctOption: 1,
+      action: "shield",
+    },
+    {
+      question: "What is the UK’s leading cancer charity called?",
+      options: [
+        "Cancer Research UK",
+        "Macmillan Cancer Support",
+        "Marie Curie",
+        "Breast Cancer Now",
+      ],
+      correctOption: 1,
+      action: "shield",
+    },
+    {
+      question: "What is the legal age to purchase tobacco products in the UK?",
+      options: ["16", "18", "21", "25"],
+      correctOption: 2,
+      action: "shield",
+    },
+    {
+      question: "What is the legal drinking age in the UK?",
+      options: ["16", "18", "21", "25"],
+      correctOption: 2,
+      action: "shield",
+    },
+
+    {
+      question:
+        "What is the UK’s recommended maximum weekly alcohol units intake for men and women?",
+      options: ["14 units", "21 units", "28 units", "35 units"],
+      correctOption: 1,
+      action: "shield",
+    },
+    {
+      question:
+        "What is the name of the UK charity that focuses on mental health awareness and support?",
+      options: ["Mind", "Heart", "Brain Trust", "MentalUK"],
+      correctOption: 1,
+      action: "shield",
+    },
+
+    {
+      question:
+        "What term describes a mental health condition characterized by extreme mood swings?",
+      options: [
+        "Bipolar Disorder",
+        "Schizophrenia",
+        "Depression",
+        "Anxiety Disorder",
+      ],
+      correctOption: 1,
+      action: "shield",
+    },
+    {
+      question:
+        "Which free emergency helpline number can be dialed in the UK for urgent mental health help?",
+      options: ["111", "999", "123", "911"],
+      correctOption: 1,
+      action: "shield",
+    },
+    {
+      question:
+        "What does the acronym CBT stand for in the context of mental health treatment?",
+      options: [
+        "Complete Brain Therapy",
+        "Cognitive Behavioral Therapy",
+        "Centralized Brain Training",
+        "Cognitive Brain Training",
+      ],
+      correctOption: 2,
+      action: "shield",
+    },
+
+    {
+      question:
+        "In the UK, what is the usual first step to take if you believe you are experiencing mental health issues?",
+      options: [
+        "Call a friend",
+        "Book an appointment with a GP",
+        "Buy medication",
+        "Start exercising",
+      ],
+      correctOption: 2,
+      action: "shield",
+    },
+    {
+      question:
+        "In the UK, what is the common name for the National Health Service clinics that provide contraception and sexual health advice?",
+      options: [
+        "Sexual Health Hubs",
+        "GUM Clinics",
+        "Healthy Choices",
+        "Family Planning Centers",
+      ],
+      correctOption: 2,
+      action: "shield",
+    },
+    {
+      question: "What is the age of sexual consent in the United Kingdom?",
+      options: ["14", "16", "18", "21"],
+      correctOption: 2,
+      action: "shield",
+    },
+
+    {
+      question: "What is a common barrier method of contraception?",
+      options: ["Contraceptive pill", "Condom", "IUD", "Patch"],
+      correctOption: 2,
+      action: "shield",
+    },
+    {
+      question:
+        "What does the term STI stand for in the context of sexual health?",
+      options: [
+        "Sexual Transmitted Infection",
+        "Sexual Treatment Information",
+        "Sexual Therapy Institute",
+        "Sexual Transmitted Illness",
       ],
       correctOption: 1,
       action: "shield",
@@ -829,7 +1160,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Display the next question if it exists
       displayQuestion(quesIndex);
     } else {
-      // All questions have been used, you can end the game or do something else
+      // All questions have been used,  end the game or do something else
       alert("All questions have been used!");
       gameStarted = false; // Optionally end the game
     }

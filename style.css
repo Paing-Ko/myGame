@@ -57,7 +57,7 @@
 
  #virus-logo {
      width: 36px;
-     /* or any other size you prefer */
+     
      height: 36px;
      margin-right: 15px;
 
@@ -193,7 +193,7 @@
 
  #play-button:hover {
      transform: translateX(1px);
-     /* Move horizontally by 10px */
+     /* Move horizontally by 1px */
      border-left: 19px solid gray;
      /* Change border size and color */
      border-top: 14px solid transparent;
