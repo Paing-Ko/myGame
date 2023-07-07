@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Hunt Introduction</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+
+
+    <style>
+        /* add background image */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            font-family: 'Frutiger', Arial, Helvetica, sans-serif;
+
+        }
+
+
+        @font-face {
+            font-family: "Frutiger";
+            src: url(media/Frutiger.ttf);
+        }
+
+
+
+        /* Remove default margin */
+        body,
+        h1,
+        ul {
+            margin: 0;
+        }
+
+        body {
+            background-image: url('image/nhsneed.png');
+            background-size: 33% 50%;
+            background-repeat: repeat;
+            line-height: 1.6rem;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .welcome {
+            background-color: #005EB8;
+            color: #ffffff;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .welcome h1 {
+            font-size: 4rem;
+            padding: 35px 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .welcome h1 {
+                font-size: 2rem;
+                /* You can adjust this value */
+                padding: 10px 10px;
+                /* You can adjust these values */
+                line-height: 35px;
+            }
+        }
+
+        @media screen and (max-width: 976px) {
+            .welcome h1 {
+                font-size: 3rem;
+                /* You can adjust this value */
+                padding: 10px 10px;
+                /* You can adjust these values */
+            }
+        }
+
+
+        .tight {
+            margin-bottom: 0;
+        }
+
+
+
+
+        /* center h1 and p */
+        .intro-container h1,
+        .intro-container p {
+            text-align: center;
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* center rules container */
+        .rules-wrapper {
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* add box with background color white and border black for RULES and lists */
+        .rules-container {
+            background-color: white;
+            border: 1px solid black;
+            padding: 20px;
+            display: inline-block;
+            text-align: left;
+            /* make the container only as wide as the content */
+        }
+
+        .rules-container ul {
+            text-align: left;
+            display: inline-block;
+        }
+
+        .storyline {
+            flex-grow: 1;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+
+        }
+
+        .storyline p {
+            text-align: justify;
+            max-width: 1000px;
+            /* you can adjust this */
+            margin: auto;
+        }
+
+
+        /* center start game button */
+        .start-button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 15px;
+            border-radius: 5px;
+            background-color: #005EB8;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .start-button:hover {
+            box-shadow: 5px 5px 15px 5px #000000;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro-container">
+        <section class="welcome">
+            <h1>Welcome to the NHS Virus Hunt!</h1>
+            <aside class="tight">
+                <p>
+                    The game is set in a human body that has been invaded by viruses.</p>
+                <p>You are an NHS staff who knows how to code, use both coding skills and medical knowledge to create
+                    defense mechanisms within the body to hunt and eradicate viruses.
+                </p>
+            </aside>
+        </section>
+        <section class="storyline">
+            <h2>Storyline:</h2>
+            <p>
+                As you were working on your project, you discovered
+                that viruses have invaded the human body and are causing chaos. Armed with your coding skills and
+                medical
+                knowledge, you are humanity's last hope. Make use of your medical expertise, choose the correct code and
+                deploy it to
+                save the day!
+            </p>
+        </section>
+        <div class="rules-wrapper">
+            <div class="rules-container">
+                <h2>Rules:</h2>
+                <ul>
+                    <li>Game starts with Score: 0 & Health: 100%, with no time limit.</li>
+
+                    <li>You will be given two types of questions(coding and health) each having 4 options to choose
+                        from.</li>
+
+                    <li>For <span style="color:green;"><strong>coding challenges</strong></span>, the questions and
+                        options will be displayed in <span style="color:green;">green</span>.
+                    </li>
+                    <li>Type the number of your answer and deploy it to combat viruses.</li>
+                    <li>Your score increases for each virus eliminated.</li>
+
+                    <li>To Keep your health above 0, answer <span style="color:red;"><strong><em>health related
+                                    questions
+                                    (red)</em></strong></span> (+5 for correct answers)</li>
+
+                    <li>***Be careful!***If you answer incorrectly or virus escape and hit the wall, you lose health.(by
+                        -5)</li>
+                    <li>The game ends when your health reaches zero.</li>
+                    <li>Are You READY?</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <button class="start-button" onclick="location.href='index.html'">Enter Game</button>
+    </div>
+</body>
+
+</html>

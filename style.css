@@ -1,0 +1,323 @@
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+     font-family: 'Frutiger', Arial, Helvetica, sans-serif;
+
+ }
+
+
+ @font-face {
+     font-family: "Frutiger";
+     src: url(media/Frutiger.ttf);
+ }
+
+ /* Remove default margin */
+ ul,
+ h1,
+ p {
+     margin: 0;
+     padding: 0;
+ }
+
+ html,
+ body {
+     font-family: 'Frutiger', Arial, Helvetica, sans-serif;
+     text-align: center;
+     background-color: #f4f4f4;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     margin: 0;
+     padding: 0;
+ }
+
+ /* Header Styles */
+ header {
+     background-color: #005EB8;
+     color: #ffffff;
+     padding: 1.2em;
+ }
+
+
+
+ h1 {
+
+     color: #ffffff;
+     margin-left: 5px;
+ }
+
+ #header-container {
+     display: flex;
+     align-items: center;
+     /* vertically center elements */
+     justify-content: space-between;
+     /* pushes elements apart */
+ }
+
+ #virus-logo {
+     width: 36px;
+     /* or any other size you prefer */
+     height: 36px;
+     margin-right: 15px;
+
+     /* spacing between the logo and the title */
+ }
+
+ /* Group the title and logo together */
+ .title-container {
+     display: flex;
+     align-items: center;
+ }
+
+ /* Game Board Styles */
+ #game-board {
+     flex-grow: 1;
+     position: relative;
+     height: 500px;
+     background-color: #e0e0e0;
+     overflow: hidden;
+     margin: 5px;
+     border: 2px solid black;
+ }
+
+ /* Score Panel Styles */
+ #score-panel {
+     text-align: right;
+ }
+
+ /* Virus Styles */
+ .virus {
+     width: 30px;
+     height: 30px;
+     background-color: red;
+     position: absolute;
+     border-radius: 50%;
+ }
+
+ /* Controls Styles */
+ footer {
+     padding: 20px 50px 50px 50px;
+
+     background-color: black;
+
+ }
+
+ #buttons-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+ }
+
+
+ #play-button {
+     width: 0;
+     height: 0;
+
+     border-left: 20px solid white;
+     border-top: 15px solid transparent;
+     border-bottom: 15px solid transparent;
+     background-color: transparent;
+     outline: none;
+     cursor: pointer;
+     transition: transform 0.3s ease, border 0.3s ease;
+     /* Adding transition property for border */
+ }
+
+ #play-button:hover {
+     transform: translateX(5px);
+     /* Move horizontally by 10px */
+     border-left: 21px solid gray;
+     /* Change border size and color */
+     border-top: 16px solid transparent;
+     border-bottom: 16px solid transparent;
+
+ }
+
+ #reset-button {
+     padding: 10px;
+     margin-left: 30px;
+     font-size: 16px;
+ }
+
+ #reset-button:hover {
+     background-color: #005EB8;
+     color: #ffffff;
+ }
+
+ #mute-button {
+     margin-left: 10px;
+     padding: 5px;
+     background-color: red;
+     color: black;
+     border: 2px dotted white;
+     cursor: pointer;
+     position: absolute;
+     right: 15px;
+ }
+
+
+ .eliminate-question {
+     color: green;
+ }
+
+ .shield-question {
+     color: red;
+ }
+
+
+
+ #controls {
+     margin-top: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #code-input {
+     width: 300px;
+     padding: 10px;
+     margin-right: 20px;
+     font-size: 16px;
+ }
+
+ #deploy-button {
+     padding: 5px 15px;
+     font-size: 16px;
+     cursor: pointer;
+     background-color: #f4f4f4;
+     border: 1px solid #ddd;
+ }
+
+ #deploy-button:hover {
+     background-color: #005EB8;
+     color: #ffffff;
+ }
+
+ #back-to-intro {
+     padding: 10px 20px;
+     background-color: #5f5f68cc;
+     color: #ffffff;
+     text-decoration: none;
+     border-radius: 8px;
+ }
+
+ #back-to-intro:hover {
+     box-shadow: 5px 5px 5px 5px white;
+     color: black;
+ }
+
+
+ #footer-info {
+     font-size: 14px;
+     color: #5f5f68cc;
+ }
+
+ #footer-info a {
+     margin-top: 0px;
+     color: grey;
+     text-decoration: none;
+ }
+
+ .fab {
+     margin-right: 5px;
+     /* Add some spacing between the icon and the text */
+ }
+
+
+
+ .modal {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.6);
+ }
+
+ .modal-content {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 50px;
+     background-color: white;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     text-align: center;
+ }
+
+ .close-button {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+ }
+
+ .modal-content button {
+     padding: 5px;
+     margin: 10px;
+ }
+
+
+ .modal-content #again {
+     background-color: green;
+     color: white;
+ }
+ .modal-content #again:hover {
+     color: black;
+ }
+ .modal-content #fcc:hover {
+     color: black;
+     background-color: white;
+ }
+ .modal-content #fcc {
+     background-color: black;
+     color: white;
+ }
+
+ .modal-content #nhs {
+    background-color: #005EB8;
+        color: #ffffff;
+ }
+ .modal-content #nhs:hover {
+    color: #005EB8;
+        background-color: #ffffff;
+ }
+
+ .modal-content #review-answers-button {
+     background-color: skyblue;
+     color: black;
+ }
+ .modal-content #review-answers-button:hover {
+     color: skyblue;
+     background-color: black;
+ }
+
+
+ #review-container {
+     height: 300px;
+     /* Set a fixed height */
+     overflow-y: auto;
+     /* Show scrollbar if the content exceeds the height */
+     /* Additional styling if needed */
+     padding: 20px;
+     border: 1px solid #ccc;
+     font-size: 18px;
+     
+ }
+
+ /* #review-container {
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 80%;
+     min-height: 80%;
+     overflow-y: auto;
+     background-color: white;
+     padding: 20px;
+     border: 1px solid black;
+ } */

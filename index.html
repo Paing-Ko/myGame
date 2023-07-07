@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus Hunt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div id="header-container">
+            <div class="title-container" onclick="reloadPage()">
+                <img src="image/virus.png" alt="logo" id="virus-logo">
+                <h1>Virus Hunt</h1>
+            </div>
+
+            <div id="score-panel">
+                <p>Level: <span id="level-display">1</span> </p>
+                <p>Score: <span id="score">0</span></p>
+                <p>Health: <span id="health">100</span>%</p>
+                <div id="health-bar" style="height: 15px; background-color: green; margin-top:5px;"></div>
+
+
+
+            </div>
+        </div>
+    </header>
+
+    <main id="game-board">
+        <video id="background-video" autoplay muted loop>
+            <source src="media/bgVideo.mp4" type="video/mp4">
+        </video>
+        <!-- Viruses will be added here dynamically -->
+        <div id="game-over-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <p id="game-over-message"></p>
+                <button id="again" onclick="restartGame()">Play Again</button>
+
+                
+                <button id="review-answers-button">Review Answers</button>
+
+                <div id="review-container" style="display:none;">
+                    <!-- The review content will be placed here -->
+                </div>
+                <br>
+                <button id="fcc" onclick="goToLink('https://www.freecodecamp.org/')">freeCodeCamp is a good start to
+                    learn HTML,
+                    CSS and Javascrpit</button> <br>
+                <button id="nhs" onclick="goToLink('https://www.nhs.uk/')">Interested in learning more about health and medical knowledge? The NHS website is a treasure trove of information.
+                Visit NHS Website for reliable and up-to-date health information. Stay curious and take charge of your health!"</button>
+                    
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="buttons-container">
+            <button id="play-button">Play</button>
+            <button id="reset-button">Re-start</button>
+            <audio id="background-music"></audio>
+            <button id="mute-button">Mute</button>
+
+        </div>
+
+
+
+        <div id="ques" style="margin: 15px; font-size: 18px; color:white;"></div>
+        <div id="options-container"></div>
+
+
+        <div id="controls">
+            <input type="text" id="code-input" placeholder="Write code here...">
+            <button id="deploy-button">Deploy Code</button>
+        </div>
+
+        <a href="intro.html" id="back-to-intro" style="position: fixed; bottom:5px; left: 5px;">Quit</a>
+
+        <div id="footer-info" style="position: fixed; bottom: 3px; right: 10px; display: flex; flex-direction: column;">
+            <span>Made by <br> Paing Phyo Ko</span>
+            <a target="_blank" href="https://github.com/Paing-Ko">
+                <iconify-icon icon="simple-icons:github"></iconify-icon> GitHub
+
+
+            </a>
+        </div>
+
+
+
+
+    </footer>
+
+
+
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
