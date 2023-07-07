@@ -86,13 +86,79 @@
      text-align: right;
  }
 
- /* Virus Styles */
  .virus {
-     width: 30px;
-     height: 30px;
+     width: 32px;
+     height: 32px;
      background-color: red;
      position: absolute;
      border-radius: 50%;
+     border: 2px dotted black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .eye {
+     width: 40%;
+     height: 40%;
+     background-color: white;
+     position: absolute;
+     border-radius: 50%;
+     min-width: 5px;
+     min-height: 5px;
+ }
+
+ .iris {
+     width: 50%;
+     height: 50%;
+     background-color: black;
+     position: absolute;
+     border-radius: 50%;
+     top: 25%;
+     left: 25%;
+     min-width: 3px;
+     min-height: 3px;
+ }
+
+ .eye.left {
+     top: 13%;
+     left: 10%;
+ }
+
+ .eye.right {
+     top: 13%;
+     right: 10%;
+ }
+
+
+ .mouth {
+     position: absolute;
+     bottom: 10%;
+     width: 60%;
+     height: 20%;
+     border-top: 2px solid black;
+     border-radius: 50%;
+
+     min-width: 4px;
+ }
+
+
+
+ @media screen and (max-width: 768px) {
+     .virus {
+         width: 20px;
+         height: 20px;
+     }
+
+     .eye {
+         width: 4px;
+         height: 4px;
+     }
+
+     .iris {
+         width: 2px;
+         height: 2px;
+     }
  }
 
  /* Controls Styles */
@@ -126,19 +192,19 @@
  }
 
  #play-button:hover {
-     transform: translateX(5px);
+     transform: translateX(1px);
      /* Move horizontally by 10px */
-     border-left: 21px solid gray;
+     border-left: 19px solid gray;
      /* Change border size and color */
-     border-top: 16px solid transparent;
-     border-bottom: 16px solid transparent;
+     border-top: 14px solid transparent;
+     border-bottom: 14px solid transparent;
 
  }
 
  #reset-button {
-     padding: 10px;
-     margin-left: 30px;
-     font-size: 16px;
+     padding: 7px;
+     margin-left: 40px;
+     font-size: 15px;
  }
 
  #reset-button:hover {
@@ -265,31 +331,36 @@
      background-color: green;
      color: white;
  }
+
  .modal-content #again:hover {
      color: black;
  }
+
  .modal-content #fcc:hover {
      color: black;
      background-color: white;
  }
+
  .modal-content #fcc {
      background-color: black;
      color: white;
  }
 
  .modal-content #nhs {
-    background-color: #005EB8;
-        color: #ffffff;
+     background-color: #005EB8;
+     color: #ffffff;
  }
+
  .modal-content #nhs:hover {
-    color: #005EB8;
-        background-color: #ffffff;
+     color: #005EB8;
+     background-color: #ffffff;
  }
 
  .modal-content #review-answers-button {
      background-color: skyblue;
      color: black;
  }
+
  .modal-content #review-answers-button:hover {
      color: skyblue;
      background-color: black;
@@ -305,7 +376,7 @@
      padding: 20px;
      border: 1px solid #ccc;
      font-size: 18px;
-     
+
  }
 
  /* #review-container {

@@ -5,8 +5,22 @@ document.addEventListener("DOMContentLoaded", () => {
   let gameStarted = false;
   let virusInterval;
   let startTime = null;
-
   let playerAnswers = [];
+  let level = 1;
+
+  const updateLevelStatus = () => {
+    const levelElement = document.getElementById("level");
+    levelElement.innerText = `${level}`;
+  };
+
+  const checkForLevelUp = () => {
+    const requiredKills = ((level * (level + 1)) / 2) * 10;
+    if (score >= requiredKills) {
+      level++;
+
+      updateLevelStatus();
+    }
+  };
 
   const scoreElement = document.getElementById("score");
   const healthElement = document.getElementById("health");
@@ -16,14 +30,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const playButton = document.getElementById("play-button");
   const optionsContainer = document.getElementById("options-container");
   const correctAnswerSound = new Audio("media/success_bell.mp3");
-  const wrongAnswerSound = new Audio("media/wrong-answer.mp3");
+  const wrongAnswerSound = new Audio("media/error.mp3");
+  const gameOverSound = new Audio("media/game-over.mp3");
 
   const codeActions = {
     eliminate: () => {
       const viruses = document.querySelectorAll(".virus");
       viruses.forEach((virus) => {
         virus.dispatchEvent(new Event("transitionend"));
-        score++;
+        score++; // Increment score as player eliminated a virus
+        checkForLevelUp(); // Check if the player should level up
         scoreElement.innerText = score;
       });
     },
@@ -686,39 +702,75 @@ document.addEventListener("DOMContentLoaded", () => {
     virus.classList.add("virus");
     virus.style.top = Math.random() * 400 + "px";
     virus.style.left = -30 + "px";
+
+    // Add eyes
+    const leftEye = document.createElement("div");
+    leftEye.classList.add("eye", "left");
+    virus.appendChild(leftEye);
+
+    const rightEye = document.createElement("div");
+    rightEye.classList.add("eye", "right");
+    virus.appendChild(rightEye);
+
+    // Add irises
+    const leftIris = document.createElement("div");
+    leftIris.classList.add("iris");
+    leftEye.appendChild(leftIris);
+
+    const rightIris = document.createElement("div");
+    rightIris.classList.add("iris");
+    rightEye.appendChild(rightIris);
+
+    // Add mouth
+    const mouth = document.createElement("div");
+    mouth.classList.add("mouth");
+    virus.appendChild(mouth);
+
     document.getElementById("game-board").appendChild(virus);
 
     let position = 0;
     let virusRemoved = false;
-    const interval = setInterval(() => {
-      if (position >= window.innerWidth) {
-        clearInterval(interval);
-        if (!virusRemoved) {
-          virus.remove();
 
-          if (health <= 0) return; // Add this check here
+    // Adjust speed based on screen width
+    let speed = window.innerWidth > 768 ? 5 : 3;
 
-          health -= 5;
-          healthElement.innerText = health;
-          console.log("Health decreased due to virus reaching the edge");
+    // Make the interval shorter as the player levels up
+    const intervalTime = 200 / level;
+
+    const interval = setInterval(
+      () => {
+        if (position >= window.innerWidth) {
+          clearInterval(interval);
+          if (!virusRemoved) {
+            virus.remove();
+
+            if (health <= 0) return;
+
+            health -= 5;
+            healthElement.innerText = health;
+            console.log("Health decreased due to virus reaching the edge");
+          }
+
+          if (health <= 0) {
+            gameEnded = true;
+            const endTime = Date.now();
+            const durationInSeconds = Math.floor((endTime - startTime) / 1000);
+            const minutes = Math.floor(durationInSeconds / 60);
+            const seconds = durationInSeconds % 60;
+            const message = `Game Over! You hunted viruses for ${minutes} minutes and ${seconds} seconds and killed ${score} of them and reached Level: ${level}. Want to try again?`;
+            showModal(message);
+            setTimeout(() => {
+              gameOverSound.play();
+            }, 1000);
+          }
+        } else {
+          position += speed;
+          virus.style.left = position + "px";
         }
-
-        if (health <= 0) {
-          gameEnded = true; // Set the flag here
-          const endTime = Date.now();
-          const durationInSeconds = Math.floor((endTime - startTime) / 1000);
-          const minutes = Math.floor(durationInSeconds / 60);
-          const seconds = durationInSeconds % 60;
-          const message = `Game Over! You hunted viruses for ${minutes} minutes and ${seconds} seconds and killed ${score} of them. Thank you, Hero! Want to try again?`;
-          showModal(message);
-
-          // location.reload();
-        }
-      } else {
-        position += 5;
-        virus.style.left = position + "px";
-      }
-    }, 100);
+      },
+      intervalTime,
+      window.innerWidth > 768 ? 100 : 150
+    ); // Slower on small screens
 
     virus.addEventListener("transitionend", () => {
       clearInterval(interval);
@@ -760,8 +812,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const minutes = Math.floor(durationInSeconds / 60);
         const seconds = durationInSeconds % 60;
 
-        const message = `Game Over! You hunted viruses for ${minutes} minutes and ${seconds} seconds and killed ${score} of them. Want to try again?`;
+        const message = `Game Over! You hunted viruses for ${minutes} minutes and ${seconds} seconds and killed ${score} of them and reached Level: ${level}. Want to try again?`;
         showModal(message);
+        setTimeout(() => {
+          gameOverSound.play();
+        }, 1000);
 
         // location.reload();
       }
@@ -836,6 +891,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }</p><br>`;
     }
 
+    // Append the total correct answers count after the loop
     reviewContent += `<p><strong>Total Correct Answers: ${correctAnswersCount} out of ${playerAnswers.length}</strong></p>`;
 
     reviewContainer.innerHTML = reviewContent;
@@ -873,10 +929,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const muteButton = document.getElementById("mute-button");
 
   const tracks = [
-    "media/bella-ciao-italian.mp3",
     "media/evil-cue.mp3",
-    "media/bella-ciao.mp3",
-    "media/dark-wind.mp3"
+    "media/bella-ciao-italian.mp3",
+    // "media/bella-ciao.mp3",
+    // "media/dark-wind.mp3",
   ];
   let currentTrackIndex = 0;
 
@@ -899,7 +955,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Toggle mute/unmute when the button is clicked
   muteButton.addEventListener("click", function () {
     music.muted = !music.muted;
-    muteButton.innerHTML = music.muted ? "Unmute" : "Mute";
+    muteButton.innerHTML = music.muted ? "Music" : "Mute";
   });
 });
 
@@ -908,6 +964,7 @@ function updateHealthBar(health) {
 
   let healthPercentage = health;
   if (health > 100) healthPercentage = 100; // Maximum bar width is 100%
+  if (health < 0) healthPercentage = 0;
 
   healthBar.style.width = healthPercentage + "%";
 
