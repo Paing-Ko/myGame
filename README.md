@@ -1,5 +1,7 @@
 # (NHS) Virus Hunt Game 🏥 🔬 🦠 👨‍💻
+
 ![Website Preview](image/game-preview.png)
+
 ## Introduction
 
 Welcome to the NHS Virus Hunt Game! This game was built as a part of my application for Founders and Coders (FAC) to showcase my skills in HTML, CSS, and Vanilla JavaScript, and also as a part of my portfolio website.
