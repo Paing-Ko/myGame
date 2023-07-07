@@ -1,4 +1,4 @@
-# (NHS) Virus Hunt Game 🏥🔬
+# (NHS) Virus Hunt Game 🏥 🔬 🦠 👨‍💻
 ![Website Preview](image/game-preview.png)
 ## Introduction
 
@@ -23,11 +23,14 @@ As you were working on your project, you discovered that viruses have invaded th
 
 ### Rules
 
-* Game starts with Score: 0 & Health: 100%, with no time limit.
+* Game starts with Level: 1, Virus: 0 & Health: 100%, with no time limit.
 * You will be given two types of questions (coding and health) each having 4 options to choose from.
 * Coding challenges and options will be displayed in green.
 * Type the number of your answer and deploy it to combat viruses.
 * Your score increases for each virus eliminated.
+* After eliminating a certain number of viruses, your level will increase, and the game will
+                        become faster with each
+                        level-up.
 * To keep your health above 0, answer health-related questions in red (+5 for correct answers).
 * Be careful! If you answer incorrectly or virus escape and hit the wall, you lose health (by -5).
 * The game ends when your health reaches zero.
@@ -56,7 +59,7 @@ Play the game online [here](https://Paing-Ko.github.io/myGame/).
 
 ## Acknowledgements
 
-This project was inspired by my passion for coding and interest in healthcare. It is built for educational purposes and to bring awareness to the importance of health education and programming knowledge as we are living in AI era.
+This project was inspired by my passion for coding and interest in healthcare. It is built for educational purposes and to bring awareness to the importance of health education and as well as programming knowledge as we are living in AI era.
 
 ## Note
 
