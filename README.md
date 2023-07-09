@@ -39,7 +39,7 @@ As you were working on your project, you discovered that viruses have invaded th
 
 ## Getting Started
 
-To play the game, click [here](https://Paing-Ko.github.io/myGame/intro.html/), read the rules & storyline and Enter the Game.
+To play the game, click [here](https://Paing-Ko.github.io/myGame), read the rules & storyline and Enter the Game.
 
 ## Technologies Used
 
