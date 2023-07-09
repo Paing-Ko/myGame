@@ -1,10 +1,11 @@
 # (NHS) Virus Hunt Game 🏥 🔬 🦠 👨‍💻
 
-![Website Preview](image/game-preview.png)
+![Game Preview](image/game-preview.png)
 
 ## Introduction
+Hello, World! :wave: I'm **Paing Phyo Ko**, a medical doctor from Myanmar turning over a new leaf by diving into the fascinating world of web development. 
 
-Welcome to the NHS Virus Hunt Game! This game was built as a part of my application for Founders and Coders (FAC) to showcase my skills in HTML, CSS, and Vanilla JavaScript, and also as a part of my portfolio website.
+Welcome to my very first game,"The NHS Virus Hunt", a game anyone who knows how to code with basic health knowledge can play! This game was built as a part of my application for Founders and Coders (FAC) to showcase my skills in HTML, CSS, and Vanilla JavaScript, and also as a part of my portfolio website.
 
 The game is an intriguing and educational adventure where you play as an NHS staff member equipped with coding skills and medical knowledge. You will deploy your knowledge to create defense mechanisms within a human body invaded by viruses.
 
@@ -37,11 +38,8 @@ As you were working on your project, you discovered that viruses have invaded th
 * Be careful! If you answer incorrectly or virus escape and hit the wall, you lose health (by -5).
 * The game ends when your health reaches zero.
 
-## Getting Started
 
-To play the game, click [here](https://Paing-Ko.github.io/myGame), read the rules & storyline and Enter the Game.
-
-## Technologies Used
+## Technologies Used :hammer_and_wrench:
 
 * HTML
 * CSS
@@ -56,21 +54,47 @@ This game was built adhering to the following project requirements:
 * Is original and engaging.
 * Includes user interaction, rules, win/lose conditions, and a scoring system.
 
-Play the game online [here](https://Paing-Ko.github.io/myGame/).
-
 
 ## Acknowledgements
 
 This project was inspired by my passion for coding and interest in healthcare. It is built for educational purposes and to bring awareness to the importance of health education and as well as programming knowledge as we are living in AI era.
 
-## Note
+## Note  :no_entry_sign:
+
 
 Interested in learning more about health and medical knowledge after playing? Visit the [NHS website](https://www.nhs.uk/) for a wealth of information on health and medical topics.
 
 Also, visit [freeCodeCamp website](https://www.freecodecamp.org/) for more coding and programming knowledge.
 
-## Author
 
-[Dr.Paing Phyo Ko]
+## :earth_africa: Hosting
 
+This game is hosted using GitHub Pages.
+
+:link: [Play my game here](https://paing-ko.github.io/myGame/)
+Go to intro and read the rules and enter the game.
+I even added (optional)background music with mute/unmute button.
+
+## :file_folder: Repository
+
+The code for this game is open source and available on GitHub.
+
+:link: [GitHub Repository](https://github.com/Paing-Ko/myGame)
+
+## :envelope: Feedback and Contact
+
+I would love to hear your feedback! If you have any comments, suggestions, or want to connect, please don't hesitate to reach out.
+
+:email: paingphyoko.keke@gmail.com
+
+
+## :heart: Thank You!
+
+Thank you for taking the time to explore my game. I'm excited about my journey in web development and sharing it with the world.
+
+Warm regards,
+
+**Paing Phyo Ko**
+
+---
 
