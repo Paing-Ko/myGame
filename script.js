@@ -1261,9 +1261,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const tracks = [
     "media/evil-cue.mp3",
-    "media/bella-ciao-italian.mp3",
-    // "media/bella-ciao.mp3",
-    // "media/dark-wind.mp3",
+    "media/bella-ciao-italian.mp3"
   ];
   let currentTrackIndex = 0;
 
