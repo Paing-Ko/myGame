@@ -57,7 +57,7 @@
 
  #virus-logo {
      width: 36px;
-     
+
      height: 36px;
      margin-right: 15px;
 
@@ -223,6 +223,10 @@
      right: 15px;
  }
 
+ #mute-button:hover {
+     color: white;
+ }
+
 
  .eliminate-question {
      color: green;
@@ -262,22 +266,35 @@
  }
 
  #back-to-intro {
-     padding: 10px 20px;
-     background-color: #5f5f68cc;
-     color: #ffffff;
+     position: fixed;
      text-decoration: none;
+     font-size: 18px;
+     padding: 10px 20px;
      border-radius: 8px;
+     bottom: 5px;
+     left: 5px;
+    
+     color: black;
+     background-color: #ffffff;
+     box-shadow: 5px 5px 5px 5px gray;
+
  }
 
  #back-to-intro:hover {
-     box-shadow: 5px 5px 5px 5px white;
-     color: black;
+    box-shadow: 5px 5px 5px 5px white;
+        background-color: #5f5f68cc;
+        color: white;
+
  }
 
-
  #footer-info {
-     font-size: 14px;
+     position: fixed;
+     display: flex;
+     flex-direction: column;
      color: #5f5f68cc;
+     font-size: 14px;
+     bottom: 3px;
+     right: 10px;
  }
 
  #footer-info a {
