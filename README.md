@@ -65,6 +65,7 @@ This game was built adhering to the following project requirements:
 ## Acknowledgements
 
 This project was inspired by my passion for coding and interest in healthcare. It is built for educational purposes and to bring awareness to the importance of health education and as well as programming knowledge as we are living in AI era.
+I tried to imitate the NHS logo and font using Frutiger, background-color: #005EB8 and color: #ffffff.
 
 ## :no_entry_sign: Note  
 

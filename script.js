@@ -1186,11 +1186,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // playButton.addEventListener("click", () => {
-  //   gameStarted = true;
-  //   playButton.disabled = true;
-  //   setInterval(createVirus, 2000);
-  // });
+
 
   document
     .getElementById("review-answers-button")
@@ -1229,6 +1225,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
 function showModal(message) {
   document.getElementById("game-over-message").innerText = message;
   document.getElementById("game-over-modal").style.display = "block";
@@ -1255,6 +1252,8 @@ function reloadPage() {
   location.reload();
 }
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const music = document.getElementById("background-music");
   const muteButton = document.getElementById("mute-button");
@@ -1268,6 +1267,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "media/piano.mp3",
     "media/instrument.mp3",
   ];
+
+  
   let currentTrackIndex = 0;
 
   // Function to change the track
@@ -1292,6 +1293,8 @@ document.addEventListener("DOMContentLoaded", function () {
     muteButton.innerHTML = music.muted ? "Music" : "Mute";
   });
 });
+
+
 
 function updateHealthBar(health) {
   const healthBar = document.getElementById("health-bar");
