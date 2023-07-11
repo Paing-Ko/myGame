@@ -3,11 +3,11 @@
 ![Game Preview](image/game-preview.png)
 
 ## Introduction
-Hello, World! :wave: I'm **Paing Phyo Ko**, a medical doctor from Myanmar turning over a new leaf by diving into the fascinating world of web development. 
+Hello, World! :wave: I'm **Paing Phyo Ko**, a medical doctor from Myanmar who is turning over a new leaf by diving into the fascinating world of web development.
 
-Welcome to my very first game,"The NHS Virus Hunt", a game anyone who knows how to code with basic health knowledge can play! This game was built as a part of my application for Founders and Coders (FAC) to showcase my skills in HTML, CSS, and Vanilla JavaScript, and also as a part of my portfolio website.
+Welcome to my very first game,"The NHS Virus Hunt",  a game designed for those with a basic knowledge of coding and health! This game was built as a part of my application for Founders and Coders (FAC) to showcase my skills in HTML, CSS, and Vanilla JavaScript, and also as a part of my portfolio website.
 
-The game is an intriguing and educational adventure where you play as an NHS staff member equipped with coding skills and medical knowledge. You will deploy your knowledge to create defense mechanisms within a human body invaded by viruses.
+The game offers an intriguing and educational adventure, where you take on the role of an NHS staff member armed with coding skills and medical knowledge. You will deploy your knowledge to create defense mechanisms within a human body invaded by viruses.
 
 ## Game Overview
 
@@ -38,6 +38,13 @@ As you were working on your project, you discovered that viruses have invaded th
 * Be careful! If you answer incorrectly or virus escape and hit the wall, you lose health (by -5).
 * The game ends when your health reaches zero.
 
+### Soundtracks
+
+The game features the following soundtracks to create a vibrant and engaging atmosphere:
+* "Evil Cue"
+* "Bella Ciao"
+* "Never Gonna Give You Up" by Rick Astley
+
 
 ## Technologies Used :hammer_and_wrench:
 
@@ -64,7 +71,7 @@ This project was inspired by my passion for coding and interest in healthcare. I
 
 Interested in learning more about health and medical knowledge after playing? Visit the [NHS website](https://www.nhs.uk/) for a wealth of information on health and medical topics.
 
-Also, visit [freeCodeCamp website](https://www.freecodecamp.org/) for more coding and programming knowledge.
+Also, visit [Harvard's CS50](https://cs50.harvard.edu/x/2023/)and [freeCodeCamp website](https://www.freecodecamp.org/) for more coding and programming knowledge.
 
 
 ## :earth_africa: Hosting
