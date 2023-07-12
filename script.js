@@ -1260,12 +1260,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const tracks = [
     "media/evil-cue.mp3",
-    "media/bella_ciao.mp3",
+    "media/bellaCiaoItalian.mp3",
     "media/intro.mp3",
     "media/rick.mp3",
     "media/8bit.mp3",
     "media/piano.mp3",
     "media/instrument.mp3",
+    "media/bellaCiao.mp3",
   ];
 
   
