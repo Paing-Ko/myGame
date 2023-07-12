@@ -3,11 +3,13 @@
 ![Game Preview](image/game-preview.png)
 
 ## Introduction
-Hello, World! :wave: I'm **Paing Phyo Ko**, a medical doctor from Myanmar who is turning over a new leaf by diving into the fascinating world of web development.
+Hello, World! :wave: I'm **Paing Phyo Ko**, a former medical doctor from Myanmar who is turning over a new leaf by diving into the fascinating world of web development.
 
-Welcome to my very first game,"The NHS Virus Hunt",  a game designed for those with a basic knowledge of coding and health! This game was built as a part of my application for Founders and Coders (FAC) to showcase my skills in HTML, CSS, and Vanilla JavaScript, and also as a part of my portfolio website.
+Welcome to my very first game, "The NHS Virus Hunt", a game designed for those with basic knowledge of coding and health! This game was built as a part of my application for Founders and Coders (FAC) to showcase my skills in HTML, CSS, and Vanilla JavaScript and as a part of my portfolio website.
 
 The game offers an intriguing and educational adventure, where you take on the role of an NHS staff member armed with coding skills and medical knowledge. You will deploy your knowledge to create defense mechanisms within a human body invaded by viruses.
+
+:link: [Play my game here](https://paing-ko.github.io/myGame/)
 
 ## :video_game: Game Overview
 
@@ -40,7 +42,7 @@ As you were working on your project, you discovered that viruses have invaded th
 
 ### :headphones: Soundtracks
 
-The game features the following soundtracks to create a vibrant and engaging atmosphere:
+The game features the following soundtracks to create a fun, vibrant and engaging atmosphere:
 * "Evil Cue"
 * "Bella Ciao"
 * "Never Gonna Give You Up" by Rick Astley
