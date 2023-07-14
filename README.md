@@ -72,7 +72,7 @@ I tried to imitate the NHS logo and font using Frutiger, background-color: #005E
 
 ## :no_entry_sign: Note  
 
-I tried my best to build this game, to be a creative, innovative, fun, educational and engaging game, but there are still some bugs where music cannot be heard every time or review answers container doesn't show every answers sometimes that I am trying to fix.
+I tried my best to build this game, to be a creative, innovative, fun, educational and engaging game. However, there are still some bugs that I am trying to fix (e.g., music cannot be heard every time or review answers container sometimes does not show all the answers.)
 
 Interested in learning more about health and medical knowledge after playing? Visit the [NHS website](https://www.nhs.uk/) for a wealth of information on health and medical topics.
 
