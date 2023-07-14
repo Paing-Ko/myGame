@@ -74,7 +74,7 @@ I tried to imitate the NHS logo and font using Frutiger, background-color: #005E
 
 Interested in learning more about health and medical knowledge after playing? Visit the [NHS website](https://www.nhs.uk/) for a wealth of information on health and medical topics.
 
-Also, visit [Harvard's CS50](https://cs50.harvard.edu/x/2023/)and [freeCodeCamp website](https://www.freecodecamp.org/) for more coding and programming knowledge.
+Also, visit [Harvard's CS50](https://cs50.harvard.edu/x/2023/) and [freeCodeCamp website](https://www.freecodecamp.org/) for more coding and programming knowledge.
 
 
 ## :earth_africa: Hosting
