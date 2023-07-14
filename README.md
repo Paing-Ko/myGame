@@ -48,6 +48,7 @@ The game features the following soundtracks to create a fun, vibrant and engagin
 * "Never Gonna Give You Up" by Rick Astley
 
 
+
 ## :hammer_and_wrench: Technologies Used 
 
 * HTML
@@ -71,6 +72,7 @@ I tried to imitate the NHS logo and font using Frutiger, background-color: #005E
 
 ## :no_entry_sign: Note  
 
+I tried my best to build this game, to be a creative, innovative, fun, educational and engaging game, but there are still some bugs where music cannot be heard every time or review answers container doesn't show every answers sometimes that I am trying to fix.
 
 Interested in learning more about health and medical knowledge after playing? Visit the [NHS website](https://www.nhs.uk/) for a wealth of information on health and medical topics.
 
